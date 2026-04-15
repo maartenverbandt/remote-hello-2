@@ -1,15 +1,17 @@
-import { jsx as o } from "react/jsx-runtime";
-function l() {
-  return /* @__PURE__ */ o("div", { children: "Hello from robOS plugin" });
+import { jsx as e } from "react/jsx-runtime";
+function r() {
+  return /* @__PURE__ */ e("div", { children: "Hello from robOS plugin" });
 }
-const e = {
+const n = {
   manifest: {
     id: "hello-world",
     name: "Hello World",
     version: "1.0.0"
   },
-  component: l
+  create({ React: o }) {
+    return r;
+  }
 };
 export {
-  e as default
+  n as default
 };
