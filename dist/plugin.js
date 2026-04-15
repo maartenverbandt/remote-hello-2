@@ -1,9 +1,9 @@
-function l({ React: e }) {
+function n({ React: e }) {
   return function() {
     return e.createElement(
       "div",
       null,
-      "Hello from robOS plugin"
+      "Hello from App.ts"
     );
   };
 }
@@ -13,7 +13,9 @@ const o = {
     name: "Hello World",
     version: "1.0.0"
   },
-  create: l
+  create({ React: e }) {
+    return n({ React: e });
+  }
 };
 export {
   o as default
