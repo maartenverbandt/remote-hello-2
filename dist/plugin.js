@@ -1,6 +1,9 @@
-import { jsx as e } from "react/jsx-runtime";
-function r() {
-  return /* @__PURE__ */ e("div", { children: "Hello from robOS plugin" });
+function l({ React: e }) {
+  return e.createElement(
+    "div",
+    null,
+    "Hello from robOS plugin"
+  );
 }
 const n = {
   manifest: {
@@ -8,8 +11,8 @@ const n = {
     name: "Hello World",
     version: "1.0.0"
   },
-  create({ React: o }) {
-    return r;
+  create({ React: e }) {
+    return l({ React: e });
   }
 };
 export {
